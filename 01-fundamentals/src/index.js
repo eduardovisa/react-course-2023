@@ -1,10 +1,41 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+// function Greeting() {
+//   return (
+//     <>
+//       <div className="someValue">
+//         <h2>Mi primer componente</h2>;
+//         <ul>
+//           <li>
+//             <a href="./index.js">Hi</a>
+//           </li>
+//         </ul>
+//       </div>
+//       <h2>Hola mundo!</h2>
+//       <input type="text" name="" id="" />
+//     </>
+//   );
+// }
+
+// function Greeting() {
+//   return React.createElement('h2', {}, 'Hola mundo!');
+// }
 
 function Greeting() {
-  return <h2>Mi primer componente</h2>;
+  return (
+    <div>
+      <Person />
+      <Message />
+    </div>
+  );
 }
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const Person = () => <h2>Eduardo</h2>;
+const Message = () => {
+  return <p>Este es mi mensaje </p>;
+};
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(<Greeting />);
