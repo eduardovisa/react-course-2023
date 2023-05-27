@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import BookList from './book_list/book_list';
 
 // function Greeting() {
 //   return (
@@ -22,20 +23,20 @@ import ReactDOM from 'react-dom/client';
 //   return React.createElement('h2', {}, 'Hola mundo!');
 // }
 
-function Greeting() {
-  return (
-    <div>
-      <Person />
-      <Message />
-    </div>
-  );
-}
+// function Greeting() {
+//   return (
+//     <div>
+//       <Person />
+//       <Message />
+//     </div>
+//   );
+// }
 
-const Person = () => <h2>Eduardo</h2>;
-const Message = () => {
-  return <p>Este es mi mensaje </p>;
-};
+// const Person = () => <h2>Eduardo</h2>;
+// const Message = () => {
+//   return <p>Este es mi mensaje </p>;
+// };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(<Greeting />);
+root.render(<BookList />);
